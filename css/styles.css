@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;800&family=Holtwood+One+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Holtwood One SC', serif;
+}
+@keyframes flip{
+    0%{
+        transform:rotateY(0deg)
+    }
+    
+    50%{
+        transform:rotateY(180deg)
+    }
+    
+    100%{
+        transform:rotateY(360deg)
+    }
+}
+#logo img{
+    animation-name: flip;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+#navbar__sections a:hover{
+    font-size: 1.1rem;
+}
+#banner{
+    background-image: url(../assets/wolfbanner3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+}   
+#banner .tittle{
+    font-size: 3rem;
+}
+@media all and (max-width:768px){
+    #banner .tittle{
+        font-size: 2rem;
+    }
+}
+#tours h5, p{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+#carousel img{
+    height: 500px;
+}
+@media all and (max-width:768px){
+    #carousel{
+        width: 100%;
+    }
+}
+#tours{
+    background-image: url(../assets/moon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#footer img:hover{
+    transform: scale(1.2);
+}
+#banner__programs{
+    background-image: url(../assets/eyesbanner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+}
+#banner__programs .tittle, #banner__wolfpack .tittle, #banner__shop .tittle, #banner__contactUs .tittle{
+    font-size: 3rem;
+}
+@media all and (max-width:768px){
+    #banner__programs .tittle, #banner__wolfpack .tittle, #banner__shop .tittle, #banner__contactUs .tittle{
+        font-size: 2rem;
+    }
+}
+#banner__wolfpack{
+    background-image: url(../assets/forestback.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    
+}
+#banner__shop{
+    background-image: url(../assets/merchbanner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+}
+#banner__contactUs{
+    background-image: url(../assets/contactbanner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+}
+#contact__networks a:hover{
+    color: #302f2f;
+}
+#form{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+}
